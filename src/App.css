@@ -18,13 +18,161 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+@font-face {
+  font-family: 'PixelGamingRegular'; 
+  src: url('assets/fonts/PixelGamingRegular-d9w0g.ttf') format('truetype');
+  /* Add more src lines for additional formats if needed */
+}
+
+@font-face {
+  font-family: 'TamagotchiNormal'; 
+  src: url('assets/fonts/Tamagotchinormal.ttf') format('truetype');
+  /* Add more src lines for additional formats if needed */
+}
+
+@font-face {
+  font-family: 'Handjet'; 
+  src: url('assets/fonts/Handjet.ttf') format('truetype');
+  /* Add more src lines for additional formats if needed */
+}
+
+.my-button{
+  padding: 15px 24px;
+  margin-right: 60px;
+  margin-left: 130px;
+  background-color: #cb4367;
+  color: whitesmoke;
+  border-radius: 20px;
+  text-align: center;  
+  font-size: 30px;
+  border: none;
+  transition-duration: 0.4s;
+  top: 10px;
+  align-items:flex-start;
+  left: 0px;
+  /* font-family: "TamagotchiNormal", sans-serif; */
+  font-family: 'Handjet', sans-serif;
+
+
+  
+}
+
+.my-button:hover{
+  background-color: #80123b;
+  box-shadow: 0 12px 16px 0 rgba(53, 43, 43, 0.24), 0 17px 50px 0 rgba(53, 43, 43, 0.24);
+}
+
+/* .my-button-container{
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 0;
+  margin-bottom: 30px;
+  position: absolute;
+  left: 0;
+} */
+.my-button-container {
+  display: flex;
+  flex: 0;  
+  margin-top: 25px;
+  flex-direction: row;
+  justify-content: flex-start;
+  /* margin-right: 0;  */
+  margin-bottom: 30px;
+  position: absolute; 
+  top: 0; 
+  left: 0;
+}
+
+.paddie-home{
+  width: 65%; 
+  height: 80%; 
+  background-color: #51484a; 
+  color: white; 
+  position: fixed;
+  top: 15%;
+  bottom: 0; 
+  left: 3%; 
+  right: 34%;
+  display: flex, inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.paddie-image{
+  width: 63%;
+  height: 75%;
+  position: fixed;
+  display: flex, inline-block;
+  align-items: center;
+  justify-content: center;
+  top: 17%;
+  bottom: 0; 
+  left: 4%; 
+  right: 34%;
+  border-radius: 20px;
+}
+
+.my-box{
+  width: 30%; 
+  height: 100%; 
+  background-color: #cb4367; 
+  color: white; 
+  position: fixed;
+  top: 0; 
+  right: 0; 
+  display: flex, inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.shadow-box{
+  width: 80%;
+  height: 75%;
+  margin: 0 auto;
+  background-color: #a32c4c;
+  color: white;
+  text-align: center;
+  padding: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+
+}
+
+.popup-container{
+  width: 70%;
+  height: 20px;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  /* justify-content: center;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 3s; */
+}
+
+
+h1{
+  font-size: 1000px;
+  display: inline-block;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Handjet', sans-serif;
+  
+}
+
+
+.tasPar{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  flex-direction: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {

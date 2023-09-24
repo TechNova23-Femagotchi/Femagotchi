@@ -6,7 +6,8 @@ const Hygeine = () => {
 
     const hygeineItems = [ "Wash Face", "Brush Teeth", "Take a Shower", "Wash Hair", "Deodorize"]
   return (
-    <Box>
+    <Box sx={{padding:"3rem"}}>
+      <h1>Daily Checklist</h1>
         <FormGroup>
         {hygeineItems.map((item, index) => (
             <FormControlLabel key={index} control={<Checkbox  sx={{

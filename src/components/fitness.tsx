@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import {Box} from '@mui/material';
 import { GoogleOAuthProvider, GoogleLogin } from '@react-oauth/google';
 
 const Fitness = () => {
@@ -32,12 +32,14 @@ let stepCount = 0;
 
 
   return (
-    <div>
+    <Box sx={{display: "flex", textAlign: "center"}}>
+    <Box sx= {{padding: "2rem", justifyItems: "center"}}>
       <GoogleOAuthProvider clientId="938830330020-v0d0eg5bkjvan6kdbg14iur4u3l40tv5.apps.googleusercontent.com">
-        {/* Pass the handleGoogleLoginSuccess function as the onSuccess handler */}
+
         <GoogleLogin onSuccess={fetchData} />
       </GoogleOAuthProvider>
       <h1>You've walked {steps} steps today!</h1>
+      <Box >
       <svg width="160" height="160" viewBox="0 0 160 160">
         <circle
           r="70"
@@ -59,8 +61,10 @@ let stepCount = 0;
           strokeDashoffset={offset}
         ></circle>
       </svg>
+      </Box>
       <h2>That's {percent}% of your goal of 10000 steps</h2>
-    </div>
+    </Box>
+    </Box>
   );
 };
 
